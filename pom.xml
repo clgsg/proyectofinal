@@ -6,8 +6,8 @@
 	<parent>
 		<groupId>es.clopez</groupId>
 		<artifactId>${project.name}</artifactId>
-		<version>0.0${env.EFC_11552}</version>
-		<relativePath>%{${project.basedir}</relativePath> <!-- lookup parent from
+		<version>2.7</version>
+		<relativePath>${project.basedir}</relativePath> <!-- lookup parent from
 		repository -->
 	</parent>
 	<version>0.0.1-SNAPSHOT</version>
@@ -50,7 +50,11 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<version>3.3.5</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-boot-data-jpa</artifactId>
+			<version>3.3.5</version>
+		</dependency>
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
