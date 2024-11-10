@@ -7,7 +7,8 @@
 		<groupId>es.clopez</groupId>
 		<artifactId>${project.name}</artifactId>
 		<version>0.0${env.EFC_11552}</version>
-		<relativePath></relativePath> <!-- lookup parent from repository -->
+		<relativePath>%{${project.basedir}</relativePath> <!-- lookup parent from
+		repository -->
 	</parent>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -39,14 +40,37 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-jpa</artifactId>
-			<version>3.3.5</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>3.3.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.core</artifactId>
+			<version>4.0.4</version>
 		</dependency>
 
 
